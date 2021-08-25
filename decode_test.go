@@ -500,21 +500,21 @@ var unmarshalFloatTests = []unmarshalFloatTest{
 		hexDecode("f90000"),
 		float64(0.0),
 		[]interface{}{float32(0.0), float64(0.0)},
-		[]reflect.Type{typeUint8, typeUint16, typeUint32, typeUint64, typeInt8, typeInt16, typeInt32, typeInt64, typeByteArray, typeByteSlice, typeString, typeBool, typeIntSlice, typeMapStringInt, typeTag, typeRawTag},
+		[]reflect.Type{typeByteArray, typeByteSlice, typeString, typeBool, typeIntSlice, typeMapStringInt, typeTag, typeRawTag},
 		0.0,
 	},
 	{
 		hexDecode("f98000"),
 		float64(-0.0),
 		[]interface{}{float32(-0.0), float64(-0.0)},
-		[]reflect.Type{typeUint8, typeUint16, typeUint32, typeUint64, typeInt8, typeInt16, typeInt32, typeInt64, typeByteArray, typeByteSlice, typeString, typeBool, typeIntSlice, typeMapStringInt, typeTag, typeRawTag},
+		[]reflect.Type{typeByteArray, typeByteSlice, typeString, typeBool, typeIntSlice, typeMapStringInt, typeTag, typeRawTag},
 		0.0,
 	},
 	{
 		hexDecode("f93c00"),
 		float64(1.0),
 		[]interface{}{float32(1.0), float64(1.0)},
-		[]reflect.Type{typeUint8, typeUint16, typeUint32, typeUint64, typeInt8, typeInt16, typeInt32, typeInt64, typeByteArray, typeByteSlice, typeString, typeBool, typeIntSlice, typeMapStringInt, typeTag, typeRawTag},
+		[]reflect.Type{typeByteArray, typeByteSlice, typeString, typeBool, typeIntSlice, typeMapStringInt, typeTag, typeRawTag},
 		0.0,
 	},
 	{
@@ -528,7 +528,7 @@ var unmarshalFloatTests = []unmarshalFloatTest{
 		hexDecode("f97bff"),
 		float64(65504.0),
 		[]interface{}{float32(65504.0), float64(65504.0)},
-		[]reflect.Type{typeUint8, typeUint16, typeUint32, typeUint64, typeInt8, typeInt16, typeInt32, typeInt64, typeByteArray, typeByteSlice, typeString, typeBool, typeIntSlice, typeMapStringInt, typeTag, typeRawTag},
+		[]reflect.Type{typeByteArray, typeByteSlice, typeString, typeBool, typeIntSlice, typeMapStringInt, typeTag, typeRawTag},
 		0.0,
 	},
 	{
@@ -549,7 +549,7 @@ var unmarshalFloatTests = []unmarshalFloatTest{
 		hexDecode("f9c400"),
 		float64(-4.0),
 		[]interface{}{float32(-4.0), float64(-4.0)},
-		[]reflect.Type{typeUint8, typeUint16, typeUint32, typeUint64, typeInt8, typeInt16, typeInt32, typeInt64, typeByteArray, typeByteSlice, typeString, typeBool, typeIntSlice, typeMapStringInt, typeTag, typeRawTag},
+		[]reflect.Type{typeByteArray, typeByteSlice, typeString, typeBool, typeIntSlice, typeMapStringInt, typeTag, typeRawTag},
 		0.0,
 	},
 	{
@@ -578,7 +578,7 @@ var unmarshalFloatTests = []unmarshalFloatTest{
 		hexDecode("fa47c35000"),
 		float64(100000.0),
 		[]interface{}{float32(100000.0), float64(100000.0)},
-		[]reflect.Type{typeUint8, typeUint16, typeUint32, typeUint64, typeInt8, typeInt16, typeInt32, typeInt64, typeByteArray, typeByteSlice, typeString, typeBool, typeIntSlice, typeMapStringInt, typeTag, typeRawTag},
+		[]reflect.Type{typeByteArray, typeByteSlice, typeString, typeBool, typeIntSlice, typeMapStringInt, typeTag, typeRawTag},
 		0.0,
 	},
 	{

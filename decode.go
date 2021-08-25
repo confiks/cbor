@@ -1555,6 +1555,18 @@ func fillFloat(t cborType, val float64, v reflect.Value) error {
 		}
 		v.SetFloat(val)
 		return nil
+	case reflect.Int, reflect.Int8, reflect.Int16, reflect.Int32, reflect.Int64, reflect.Uint,
+		reflect.Uint8, reflect.Uint16, reflect.Uint32, reflect.Uint64:
+		// Silently cast float values representing whole numbers to ints
+		if val != float64(int64(val)) {
+			break
+		}
+
+		if val < 0 {
+			return fillNegativeInt(t, int64(val), v)
+		} else {
+			return fillPositiveInt(t, uint64(val), v)
+		}
 	}
 	return &UnmarshalTypeError{Value: t.String(), Type: v.Type()}
 }
